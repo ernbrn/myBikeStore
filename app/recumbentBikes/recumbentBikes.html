@@ -1,0 +1,11 @@
+<div ng-controller="RecumbentBikeController as recBikeCtrl">
+  <h5>{{ recBikeCtrl.header }}</h5>
+  <div>
+    <ul ng-repeat="bike in recBikeCtrl.bikes" style="list-style-type:none">
+      <img src="{{ bike.img }}" height="100px;">
+      <li>Name: {{ bike.name }}</li>
+      <li>Manufacturer: {{ bike.manufacturer }}</li>
+      <li>Price: {{ bike.price}}</li>
+    </ul>
+  </div>
+</div>

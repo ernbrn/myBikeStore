@@ -1,0 +1,21 @@
+<div ng-controller="BikeController as bikeCtrl">
+  <h5>{{ bikeCtrl.header }}</h5>
+
+  <div ng-controller="MountainBikeController as mtnBikeController" style="float: left;">
+    <ul ng-repeat="bike in mtnBikeController.bikes" style="list-style-type:none">
+      <img src="{{ bike.img }}" height="100px;">
+      <li>Name: {{ bike.name }}</li>
+      <li>Manufacturer: {{ bike.manufacturer }}</li>
+      <li>Price: {{ bike.price}}</li>
+    </ul>
+  </div>
+
+  <div ng-controller="RecumbentBikeController as recBikeController" style="float: right;">
+    <ul ng-repeat="bike in recBikeController.bikes" style="list-style-type:none">
+      <img src="{{ bike.img }}" height="100px;">
+      <li>Name: {{ bike.name }}</li>
+      <li>Manufacturer: {{ bike.manufacturer }}</li>
+      <li>Price: {{ bike.price}}</li>
+    </ul>
+  </div>
+</div>
